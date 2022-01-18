@@ -46,9 +46,9 @@ function App() {
         <header className='App-header'>
           <img src={logo} className='App-logo' alt='logo' />
           <TodoList todos={todos} toggleTodo={toggleTodo} />
-          <input ref={todoNameRef} type='text' />
-          <button onClick={handleAddTodo}>Add Todo</button>
-          <button onClick={handleClearTodos}>Clear Done</button>
+          <input className='text-box' ref={todoNameRef} type='text' />
+          <button className='btn' onClick={handleAddTodo}>Add Todo</button>
+          <button className='btn' onClick={handleClearTodos}>Clear Done</button>
           <div>{todos.filter((todo) => !todo.complete).length} left to do</div>
         </header>
       </div>
